@@ -1,0 +1,25 @@
+Comentarios: 
+
+Fonts:
+    font-family: 'Lora', serif;
+    font-family: 'Mukta', sans-serif;
+
+Colores comentarios: con ! * ? todo
+
+---------------- CODERHOUSE: ----------------------------- 
+Si una funcion esta asociada a un evento, lo mejor es tener un criterio de orden, en el que 
+Si la funcion va a estar ligada a varios eventos, primero definas los eventos ligadas a esa funcion y luego la funcion en si
+Si la funcion solamente va a estar ligada a UN solo evento, entonces no necesitas una funcion, lo mas practico es declararla directamente dentro del evento, como funcion flecha, de esta manera cuando veo el evento ya se que es lo que hace, y no tengo que salir a ver donde esta declarada esa funcion (como los eventos de las flechas)
+
+-----------------------------------------------------------------
+
+                                        CORRECCIONES PERSONALES
+
+1- arreglar el nav del header para poder poner fixed.
+2- agregar logo de la compañia. 
+4- Cuando se selecciona buscador de viajes y despues buscador de acctividades, ambos se borran. agregar un if para que si esto pasa el seleccionado se restaure. 
+5- al buscador de actividades agregar muchas opciones de autocompletado 
+7- Cuando pongo dentro de mi continente no me muestra ningun resultado
+8- transformar ttodo y usar check boxes?
+9- agregar bosque y selvas como uno
+10- agregar un maximo de lugares que se puedan mostrar para que si se hace click muchas veces no se rompa la pagina

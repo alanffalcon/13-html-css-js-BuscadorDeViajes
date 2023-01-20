@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guru Travelers</title>
+    <!-- ICONO -->
+    <link rel="icon" href="./imagenes/falcon-ico.ico">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- JS -->
+    <script defer src="main.js"></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Mukta&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ! HEADER -->
+    <header>
+        <nav class="nav-header">
+            <ul class="ul-header">
+                <li class="li-header"><a href="" id="buscarViajeNav" class="a-white">Buscador de Viajes</a></li>
+                <li class="li-header"><a href=""id="buscarActividadNav" class="a-white">Buscador de Actividades</a></li>
+                <li class="li-header"><a href="archivos/CV actualizado.pdf" class="a-white" target="_blank">Sobre Nosotros</a></li>
+                <li class="li-header"><a href="archivos/CV actualizado.pdf" class="a-white" target="_blank">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- ! MAIN -->
+    <main class="main" >
+        <!-- ! INTRO -->
+        <div class="div1-main">
+            <h1 class="h-title"><a href="" class="a-maingeneral">Guru Travelers</a></h1>
+            <p class="p-subtitle">Tu mejor acompañante!</p>
+        </div>
+        <p class="intro1">Somos una compañia que busca guiarte en tus decisiones de viaje para que tengas la mejor experiencia posible cada dia!.</p>
+        <p class="intro2">Primero eligue entre el buscador de viajes y el buscador de actividades para que podamos empezar a asesorate...</p>
+        <div class="div2-main">
+            <!-- ! MAIN VIAJES -->
+            <div class="subdiv-main">
+                <h2 class="h2-title"><a href="" class="a-white" id="buscarViajes_h2">Buscador de Viajes</a></h2>
+                <form name="form1" class="form">
+                    <label for="continent">Seleccionar por continente: </label> 
+                    <br>
+                    <select name="continent" class="select" id="continent">
+                        <option value="0">No sé...</option>
+                        <option value="1">America del Sur</option>
+                        <option value="2">America Central</option>
+                        <option value="3">America del Norte</option>
+                        <option value="4">Europa</option>
+                        <option value="5">Africa</option>
+                        <option value="6">Asia</option>   
+                        <option value="7">Oceania</option>                     
+                    </select>
+                    <br>
+                    <label for="type-travel">Seleccionar por tipo de viaje:</label> 
+                    <br>
+                    <select name="type-travel" class="select" id="type-travel">
+                        <option value="0">No sé...</option>
+                        <option value="1">Relajacion</option>
+                        <option value="2">Cultura</option>                       
+                    </select>
+                    <br>
+                    <label for="presupuesto">Seleccionar presupuesto de viaje:</label> 
+                    <br>
+                    <select name="presupuesto" class="select" id="presupuesto">
+                        <option value="0">Cualquier parte esta bien.</option>  
+                        <option value="1">Dentro de mi pais. (arg)</option>
+                        <option value="2">Dentro de mi continente.</option>                                            
+                    </select>
+                    <br>
+                    <label for="habitat">Seleccionar tipo de habitat:</label> 
+                    <br>
+                    <select name="habitat" class="select" id="habitat">
+                        <option value="0">Cualquiera</option>  
+                        <option value="1">Ciudad</option> 
+                        <option value="2">Montaña</option>                             
+                        <option value="3">Desierto</option>   
+                        <option value="4">Nieve</option>   
+                        <option value="5">Playa</option>   
+                        <option value="6">Rio</option>   
+                    </select>
+                    <br>
+                    <div class="buttons">
+                        <input type="reset" value="Empezar de nuevo..." class="submit refresh">
+                        <input type="submit" value="Buscar destino!" class="submit" id="buscarDestino">
+                    </div>                      
+                </form>
+            </div>
+            <!-- ! MAIN ACTIVIDADES -->
+            <div class="subdiv-main mainActividad">
+                <h2 class="h2-title"><a href="" class="a-white" id="buscarActividad_h2">Buscador de Actividades</a></h2>    
+                <form class="form">      
+                    <label for="where">¿Donde te encuentras?</label>
+                    <br>
+                    <input class="inp" id="where" type="text" placeholder="Buenos Aires..." required>  
+                    <br>
+                    <label for="actividad">¿Que tipo de actividad busca?</label> 
+                    <br>
+                    <select name="actividad" class="select" id="actividad">
+                        <option value="0">Cualquiera</option>  
+                        <option value="1">Museos</option>  
+                        <option value="2">Boliches</option>  
+                        <option value="3">Lugares Historicos</option>  
+                        <option value="4">Restaurantes</option>  
+                        <option value="5">Excursiones</option>  
+                    </select>
+                    <br>
+                    <div class="buttons">
+                        <input type="reset" value="Empezar de nuevo..." class="submit refresh">
+                        <input type="submit" value="Buscar Actividades!" class="submit" id="buscarActividad">  
+                    </div> 
+                </form>
+            </div>
+        </div>   
+        
+        <!-- ! CAROUSEL -->
+
+        <section id="carousel-clone">
+            <template id="template">
+                <div class="lugares-recomendadas contenedor">
+                    <div class="contenedor-titulo-controles">
+                        <h3 class="carousel-title">Lugares Recomendados: </h3>
+                        <div class="indicadores"></div>
+                    </div>
+
+                    <div class="contenedor-principal">
+                        <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+
+                        <div class="contenedor-carousel">
+                            <div class="carousel" id="carousel" >
+                                <div class="lugar" id="lugar">
+                                    <a href="#" id="enlaceLugar" ><img src="./imagenes/lugares/" alt="" id="imagenLugar" ></a>
+                                    <div class="capa">
+                                        <h3 class="titulo-lugar" id="tituloimg_h3" ></h3>
+                                        <p class="parrafo-lugar" id="parrafoimg_p"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+                    </div>
+                </div>
+            </template>
+        </section>
+    </main>
+    <!-- ! FOOTER -->
+    <footer>
+        <ul class="ul-footer">
+            <li><a href="#" class="a-footer">Privacy</a></li>
+            <li><a href="#" class="a-footer">Terms</a></li>
+            <li><a href="archivos/CV actualizado.pdf" class="a-footer" target="_blank">Contact</a></li>            
+        </ul>
+        <p class="p-footer">@Copyright 2022, Alan Facundo Falcon</p>
+    </footer>
+</body>
+</html>
